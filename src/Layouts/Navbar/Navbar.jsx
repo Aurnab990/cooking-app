@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import useAuth from '../../Hooks/useAuth';
+import { AuthContext } from '../../AuthProvider/Authprovider';
 
 const Navbar = () => {
+    const { user } = useContext(AuthContext);
+    console.log(user);
     const menu =
         [
             <li><a>Home</a></li>,
@@ -28,7 +32,21 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to={"login"}><a className="btn btn-warning">Login</a></Link>
+                    {
+                        user ?
+                        <div className='flex gap-3'>
+                            <Link to={"dashboard"}><a className="btn btn-warning">Dashboard</a></Link>
+                            <div className="avatar">
+                                <div className="w-10 pointer rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                    
+                                    <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                    
+                                </div>
+                            </div>
+                        </div>
+                            :
+                            <Link to={"login"}><a className="btn btn-warning">Login</a></Link>
+                    }
                 </div>
             </div>
         </div>
