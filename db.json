@@ -1,0 +1,40 @@
+{
+    "items":[
+        {
+          "id": 1,
+          "name": "Spaghetti Carbonara",
+          "simple_description": "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
+          "price": 12.99,
+          "image": "https://example.com/images/spaghetti_carbonara.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Chicken Alfredo",
+          "simple_description": "Creamy pasta with grilled chicken, parmesan cheese, and Alfredo sauce.",
+          "price": 15.49,
+          "image": "https://example.com/images/chicken_alfredo.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Beef Tacos",
+          "simple_description": "Soft tacos filled with seasoned beef, lettuce, cheese, and salsa.",
+          "price": 9.99,
+          "image": "https://example.com/images/beef_tacos.jpg"
+        },
+        {
+          "id": 4,
+          "name": "Vegetarian Stir-fry",
+          "simple_description": "A mix of fresh vegetables stir-fried with tofu in a savory sauce.",
+          "price": 11.49,
+          "image": "https://example.com/images/vegetarian_stir_fry.jpg"
+        },
+        {
+          "id": 5,
+          "name": "Mango Smoothie",
+          "simple_description": "A refreshing smoothie made with fresh mango, yogurt, and honey.",
+          "price": 5.99,
+          "image": "https://example.com/images/mango_smoothie.jpg"
+        }
+      ]
+      
+  }

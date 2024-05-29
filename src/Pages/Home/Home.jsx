@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../../Layouts/Navbar/Navbar';
 import Header from '../../Layouts/Header/Header';
-import Products from '../../Components/Products/Products';
+import Items from '../../DataFetching/Items';
 
 const Home = () => {
     return (
@@ -9,7 +9,8 @@ const Home = () => {
             <Navbar></Navbar>
             <Header></Header>
             <h1 className='text-4xl -mt-10 font-semibold text-red-500 text-center'>Best Recepies</h1>
-            <Products></Products>
+            
+            <Items></Items>
         </div>
     );
 };
